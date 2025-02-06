@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Bens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        img {
+            width: 50px;
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .btn-editar {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-editar:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            th, td {
+                width: 100%;
+                box-sizing: border-box;
+            }
+            th {
+                background-color: #f2f2f2;
+                color: #333;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Bens</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Data da Compra</th>
+                <th>Valor da Compra</th>
+                <th>Custo Total da Propriedade</th>
+                <th>Categoria</th>
+                <th>Foto</th>
+                <th>Status</th>
+                <th>Vida Útil Restante</th>
+                <th>Depreciação</th>
+                <th>Valor de Uso Mensal</th>
+                <th>Valor Residual</th>
+                <th>Tempo de Vida Total</th>
+                <th>Manutenção Total</th>
+                <th>Garantia Restante</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>1</td>
+                <td>eeee</td>
+                <td>2024-01-18</td>
+                <td>R$ 111100.00</td>
+                <td>R$ 122211.00</td>
+                <td>12111</td>
+                <td>
+                    
+                        <img src="/uploads/20201124_145731%20(1).jpg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>11 anos</td>
+                <td>R$ 60179.17</td>
+                <td>R$ 9400.85</td>
+                <td>R$ 50920.83</td>
+                <td>13 anos</td>
+                <td>R$ 11111.00</td>
+                <td>N/A</td>
+                <td>
+                    <a href="/editar/1" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>ewdfrwesd</td>
+                <td>2024-01-12</td>
+                <td>R$ 1111.00</td>
+                <td>R$ 0.00</td>
+                <td>gfsd</td>
+                <td>
+                    
+                        <img src="/uploads/20201124_145731%20(1).jpg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>11 anos</td>
+                <td>R$ 601.79</td>
+                <td>R$ 0.00</td>
+                <td>R$ 509.21</td>
+                <td>13 anos</td>
+                <td>R$ 0.00</td>
+                <td>N/A</td>
+                <td>
+                    <a href="/editar/2" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>sdeaas</td>
+                <td>2024-01-01</td>
+                <td>R$ 1111.00</td>
+                <td>R$ 0.00</td>
+                <td>fsdsdf</td>
+                <td>
+                    
+                        <img src="/uploads/20201124_145731_1.jpg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>11 anos</td>
+                <td>R$ 601.79</td>
+                <td>R$ 0.00</td>
+                <td>R$ 509.21</td>
+                <td>13 anos</td>
+                <td>R$ 0.00</td>
+                <td>N/A</td>
+                <td>
+                    <a href="/editar/3" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>sdeaas</td>
+                <td>2024-01-01</td>
+                <td>R$ 1111.00</td>
+                <td>R$ 0.00</td>
+                <td>fsdsdf</td>
+                <td>
+                    
+                        <img src="/uploads/20201124_145731_1.jpg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>11 anos</td>
+                <td>R$ 601.79</td>
+                <td>R$ 0.00</td>
+                <td>R$ 509.21</td>
+                <td>13 anos</td>
+                <td>R$ 0.00</td>
+                <td>N/A</td>
+                <td>
+                    <a href="/editar/4" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>asdfsdfsd</td>
+                <td>2024-12-01</td>
+                <td>R$ 1111.00</td>
+                <td>R$ 0.00</td>
+                <td>dfdfdfdf</td>
+                <td>
+                    
+                        <img src="/uploads/20201124_145731_1.jpg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>22 anos</td>
+                <td>R$ 92.58</td>
+                <td>R$ 0.00</td>
+                <td>R$ 1018.42</td>
+                <td>2 anos</td>
+                <td>R$ 0.00</td>
+                <td>N/A</td>
+                <td>
+                    <a href="/editar/5" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>dasfsf</td>
+                <td>2024-01-01</td>
+                <td>R$ 1111.11</td>
+                <td>R$ 0.00</td>
+                <td>sdfgsdsdf</td>
+                <td>
+                    
+                        <img src="/uploads/20201124_145731_1.jpg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>11 anos</td>
+                <td>R$ 601.85</td>
+                <td>R$ 0.00</td>
+                <td>R$ 509.26</td>
+                <td>13 anos</td>
+                <td>R$ 0.00</td>
+                <td>N/A</td>
+                <td>
+                    <a href="/editar/6" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>asdasdas</td>
+                <td>2024-01-01</td>
+                <td>R$ 1111.11</td>
+                <td>R$ 1112.11</td>
+                <td>asdasd</td>
+                <td>
+                    
+                        <img src="/uploads/20201124_145731%20(1).jpg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>11 anos</td>
+                <td>R$ 601.85</td>
+                <td>R$ 85.55</td>
+                <td>R$ 509.26</td>
+                <td>13 anos</td>
+                <td>R$ 1.00</td>
+                <td>N/A</td>
+                <td>
+                    <a href="/editar/7" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>asdfasd</td>
+                <td>2024-01-01</td>
+                <td>R$ 1111.11</td>
+                <td>R$ 1112.11</td>
+                <td>adfssaff</td>
+                <td>
+                    
+                        <img src="/uploads/20201124_145731_1.jpg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>11 anos</td>
+                <td>R$ 601.85</td>
+                <td>R$ 85.55</td>
+                <td>R$ 509.26</td>
+                <td>13 anos</td>
+                <td>R$ 1.00</td>
+                <td>N/A</td>
+                <td>
+                    <a href="/editar/8" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>asdfasd</td>
+                <td>2024-01-01</td>
+                <td>R$ 1111.11</td>
+                <td>R$ 1112.11</td>
+                <td>adfssaff</td>
+                <td>
+                    
+                        <img src="/uploads/20201124_145731_1.jpg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>11 anos</td>
+                <td>R$ 601.85</td>
+                <td>R$ 85.55</td>
+                <td>R$ 509.26</td>
+                <td>13 anos</td>
+                <td>R$ 1.00</td>
+                <td>N/A</td>
+                <td>
+                    <a href="/editar/9" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>10</td>
+                <td>asdfasd</td>
+                <td>2024-01-01</td>
+                <td>R$ 1111.11</td>
+                <td>R$ 1112.11</td>
+                <td>adfssaff</td>
+                <td>
+                    
+                        <img src="/uploads/20201124_145731_1.jpg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>11 anos</td>
+                <td>R$ 601.85</td>
+                <td>R$ 85.55</td>
+                <td>R$ 509.26</td>
+                <td>13 anos</td>
+                <td>R$ 1.00</td>
+                <td>N/A</td>
+                <td>
+                    <a href="/editar/10" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>11</td>
+                <td>tttttttttttttttttttttttttttt</td>
+                <td>2024-12-01</td>
+                <td>R$ 2222.22</td>
+                <td>R$ 2333.33</td>
+                <td>dasfsdfsdf</td>
+                <td>
+                    
+                        <img src="/uploads/WhatsApp%20Image%202025-01-18%20at%2009.38.18.jpeg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>22 anos</td>
+                <td>R$ 185.18</td>
+                <td>R$ 1166.66</td>
+                <td>R$ 2037.03</td>
+                <td>2 anos</td>
+                <td>R$ 111.11</td>
+                <td>N/A</td>
+                <td>
+                    <a href="/editar/11" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>12</td>
+                <td>teste1</td>
+                <td>2024-01-01</td>
+                <td>R$ 1111.11</td>
+                <td>R$ 1111.11</td>
+                <td>teste 2</td>
+                <td>
+                    
+                        <img src="/uploads/20201124_145731_1.jpg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>11 anos</td>
+                <td>R$ 601.85</td>
+                <td>R$ 85.47</td>
+                <td>R$ 509.26</td>
+                <td>13 anos</td>
+                <td>R$ 0.00</td>
+                <td>N/A</td>
+                <td>
+                    <a href="/editar/12" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>13</td>
+                <td>teste1</td>
+                <td>2024-01-01</td>
+                <td>R$ 1111.11</td>
+                <td>R$ 1111.11</td>
+                <td>teste 2</td>
+                <td>
+                    
+                        <img src="/uploads/20201124_145731_1.jpg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>11 anos</td>
+                <td>R$ 601.85</td>
+                <td>R$ 85.47</td>
+                <td>R$ 509.26</td>
+                <td>13 anos</td>
+                <td>R$ 0.00</td>
+                <td>N/A</td>
+                <td>
+                    <a href="/editar/13" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>14</td>
+                <td>bbbbbbbbbbbbbbbbbbbbbb</td>
+                <td>2023-01-01</td>
+                <td>R$ 1000.00</td>
+                <td>R$ 1000.00</td>
+                <td>dfsdsdsd</td>
+                <td>
+                    
+                        <img src="/uploads/20201124_145731_1.jpg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>11 anos</td>
+                <td>R$ 694.44</td>
+                <td>R$ 40.00</td>
+                <td>R$ 305.56</td>
+                <td>25 anos</td>
+                <td>R$ 0.00</td>
+                <td>N/A</td>
+                <td>
+                    <a href="/editar/14" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>15</td>
+                <td>sasasa1111111111111111111</td>
+                <td>2020-01-01</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 3333.33</td>
+                <td>fcsdfsdfsdf</td>
+                <td>
+                    
+                        <img src="/uploads/WhatsApp%20Image%202025-01-18%20at%2009.35.54.jpeg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>0 anos</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 54.64</td>
+                <td>R$ 0.00</td>
+                <td>61 anos</td>
+                <td>R$ 0.00</td>
+                <td>161</td>
+                <td>
+                    <a href="/editar/15" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>16</td>
+                <td>tyeste1 11111</td>
+                <td>2023-02-01</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 3333.33</td>
+                <td>Eletrônico</td>
+                <td>
+                    
+                        <img src="/uploads/WhatsApp%20Image%202025-01-18%20at%2009.35.54.jpeg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>0 anos</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 138.89</td>
+                <td>R$ 0.00</td>
+                <td>24 anos</td>
+                <td>R$ 0.00</td>
+                <td>0</td>
+                <td>
+                    <a href="/editar/16" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>17</td>
+                <td>tyeste1 11111</td>
+                <td>2023-02-01</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 3333.33</td>
+                <td>Eletrônico</td>
+                <td>
+                    
+                        <img src="/uploads/WhatsApp%20Image%202025-01-18%20at%2009.35.54.jpeg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>0 anos</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 138.89</td>
+                <td>R$ 0.00</td>
+                <td>24 anos</td>
+                <td>R$ 0.00</td>
+                <td>0</td>
+                <td>
+                    <a href="/editar/17" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>18</td>
+                <td>tyeste1 11111</td>
+                <td>2023-02-01</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 3333.33</td>
+                <td>Eletrônico</td>
+                <td>
+                    
+                        <img src="/uploads/WhatsApp%20Image%202025-01-18%20at%2009.35.54.jpeg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>0 anos</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 138.89</td>
+                <td>R$ 0.00</td>
+                <td>24 anos</td>
+                <td>R$ 0.00</td>
+                <td>0</td>
+                <td>
+                    <a href="/editar/18" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>19</td>
+                <td>tyeste1 11111</td>
+                <td>2023-02-01</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 3333.33</td>
+                <td>Eletrônico</td>
+                <td>
+                    
+                        <img src="/uploads/WhatsApp%20Image%202025-01-18%20at%2009.35.54.jpeg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>0 anos</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 138.89</td>
+                <td>R$ 0.00</td>
+                <td>24 anos</td>
+                <td>R$ 0.00</td>
+                <td>0</td>
+                <td>
+                    <a href="/editar/19" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>20</td>
+                <td>tyeste1 11111</td>
+                <td>2023-02-01</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 3333.33</td>
+                <td>Eletrônico</td>
+                <td>
+                    
+                        <img src="/uploads/WhatsApp%20Image%202025-01-18%20at%2009.35.54.jpeg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>0 anos</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 138.89</td>
+                <td>R$ 0.00</td>
+                <td>24 anos</td>
+                <td>R$ 0.00</td>
+                <td>0</td>
+                <td>
+                    <a href="/editar/20" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>21</td>
+                <td>tyeste1 11111</td>
+                <td>2023-02-01</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 3333.33</td>
+                <td>Eletrônico</td>
+                <td>
+                    
+                        <img src="/uploads/WhatsApp%20Image%202025-01-18%20at%2009.35.54.jpeg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>0 anos</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 138.89</td>
+                <td>R$ 0.00</td>
+                <td>24 anos</td>
+                <td>R$ 0.00</td>
+                <td>0</td>
+                <td>
+                    <a href="/editar/21" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>22</td>
+                <td>tyeste1 11111</td>
+                <td>2023-02-01</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 3333.33</td>
+                <td>Eletrônico</td>
+                <td>
+                    
+                        <img src="/uploads/WhatsApp%20Image%202025-01-18%20at%2009.35.54.jpeg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>0 anos</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 138.89</td>
+                <td>R$ 0.00</td>
+                <td>24 anos</td>
+                <td>R$ 0.00</td>
+                <td>0</td>
+                <td>
+                    <a href="/editar/22" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>23</td>
+                <td>tyeste1 11111</td>
+                <td>2023-02-01</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 3333.33</td>
+                <td>Eletrônico</td>
+                <td>
+                    
+                        <img src="/uploads/WhatsApp%20Image%202025-01-18%20at%2009.35.54.jpeg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>0 anos</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 138.89</td>
+                <td>R$ 0.00</td>
+                <td>24 anos</td>
+                <td>R$ 0.00</td>
+                <td>0</td>
+                <td>
+                    <a href="/editar/23" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>24</td>
+                <td>tyeste1 11111</td>
+                <td>2023-02-01</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 3333.33</td>
+                <td>Eletrônico</td>
+                <td>
+                    
+                        <img src="/uploads/WhatsApp%20Image%202025-01-18%20at%2009.35.54.jpeg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>0 anos</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 138.89</td>
+                <td>R$ 0.00</td>
+                <td>24 anos</td>
+                <td>R$ 0.00</td>
+                <td>0</td>
+                <td>
+                    <a href="/editar/24" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>25</td>
+                <td>tyeste1 11111</td>
+                <td>2023-02-01</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 3333.33</td>
+                <td>Eletrônico</td>
+                <td>
+                    
+                        <img src="/uploads/WhatsApp%20Image%202025-01-18%20at%2009.35.54.jpeg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>0 anos</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 138.89</td>
+                <td>R$ 0.00</td>
+                <td>24 anos</td>
+                <td>R$ 0.00</td>
+                <td>0</td>
+                <td>
+                    <a href="/editar/25" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>26</td>
+                <td>tyeste1 11111</td>
+                <td>2023-02-01</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 3333.33</td>
+                <td>Eletrônico</td>
+                <td>
+                    
+                        <img src="/uploads/WhatsApp%20Image%202025-01-18%20at%2009.35.54.jpeg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>0 anos</td>
+                <td>R$ 3333.33</td>
+                <td>R$ 138.89</td>
+                <td>R$ 0.00</td>
+                <td>24 anos</td>
+                <td>R$ 0.00</td>
+                <td>0</td>
+                <td>
+                    <a href="/editar/26" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>27</td>
+                <td></td>
+                <td>2023-12-01</td>
+                <td>R$ 444444.00</td>
+                <td>R$ 444444.00</td>
+                <td></td>
+                <td>
+                    
+                        <img src="/uploads/WhatsApp%20Image%202025-01-18%20at%2009.35.54.jpeg" alt="Foto do bem">
+                    
+                </td>
+                <td>Disponível</td>
+                <td>10 anos</td>
+                <td>R$ 259259.00</td>
+                <td>R$ 31746.00</td>
+                <td>R$ 185185.00</td>
+                <td>14 anos</td>
+                <td>R$ 0.00</td>
+                <td>10</td>
+                <td>
+                    <a href="/editar/27" class="btn-editar">Editar</a>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>
